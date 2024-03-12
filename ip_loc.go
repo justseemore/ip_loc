@@ -1,4 +1,4 @@
-package main
+package ip_loc
 
 import (
 	"github.com/justseemore/ip_loc/internal/db"
