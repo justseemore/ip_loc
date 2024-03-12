@@ -59,7 +59,11 @@ func (es Entities) String() string {
 	var result strings.Builder
 	for _, entity := range es {
 		if entity.Type != TypePlain && len(entity.InfoText) > 0 {
-			result.WriteString(entity.InfoText)
+			info := strings.Replace(entity.InfoText, "中国", "", 1)
+			info = strings.TrimSpace(strings.ReplaceAll(info, "\t", " "))
+			//re := regexp.MustCompile(`\s+`)
+			//info = re.ReplaceAllString(info, "\t", " ")
+			result.WriteString(info)
 		}
 	}
 	return result.String()
