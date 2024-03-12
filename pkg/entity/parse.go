@@ -1,12 +1,12 @@
 package entity
 
 import (
-	"ip_loc/internal/db"
+	"github.com/justseemore/ip_loc/internal/db"
 	"net/netip"
 	"sort"
 
-	"ip_loc/pkg/dbif"
-	"ip_loc/pkg/re"
+	"github.com/justseemore/ip_loc/pkg/dbif"
+	"github.com/justseemore/ip_loc/pkg/re"
 )
 
 // ParseLine parse a line into entities

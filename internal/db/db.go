@@ -3,10 +3,10 @@ package db
 import (
 	"log"
 
-	"ip_loc/pkg/cdn"
-	"ip_loc/pkg/dbif"
-	"ip_loc/pkg/qqwry"
-	"ip_loc/pkg/zxipv6wry"
+	"github.com/justseemore/ip_loc/pkg/cdn"
+	"github.com/justseemore/ip_loc/pkg/dbif"
+	"github.com/justseemore/ip_loc/pkg/qqwry"
+	"github.com/justseemore/ip_loc/pkg/zxipv6wry"
 )
 
 func GetDB(typ dbif.QueryType) (db dbif.DB) {

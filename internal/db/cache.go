@@ -3,7 +3,7 @@ package db
 import (
 	"sync"
 
-	"ip_loc/pkg/dbif"
+	"github.com/justseemore/ip_loc/pkg/dbif"
 )
 
 var (

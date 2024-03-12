@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/fatih/color"
-	"ip_loc/pkg/dbif"
+	"github.com/justseemore/ip_loc/pkg/dbif"
 )
 
 type EntityType uint

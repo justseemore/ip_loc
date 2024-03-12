@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"ip_loc/pkg/wry"
+	"github.com/justseemore/ip_loc/pkg/wry"
 
 	"github.com/lionsoul2014/ip2region/binding/golang/xdb"
 )

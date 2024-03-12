@@ -1,8 +1,8 @@
 package db
 
 import (
-	"ip_loc/pkg/cdn"
-	"ip_loc/pkg/qqwry"
+	"github.com/justseemore/ip_loc/pkg/cdn"
+	"github.com/justseemore/ip_loc/pkg/qqwry"
 	"os"
 )
 

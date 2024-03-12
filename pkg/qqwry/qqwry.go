@@ -8,7 +8,7 @@ import (
 	"net"
 	"os"
 
-	"ip_loc/pkg/wry"
+	"github.com/justseemore/ip_loc/pkg/wry"
 )
 
 var DownloadUrls = []string{

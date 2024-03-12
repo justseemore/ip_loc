@@ -1,4 +1,4 @@
-module ip_loc
+module github.com/justseemore/ip_loc
 
 go 1.21.5
 

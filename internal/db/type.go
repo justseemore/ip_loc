@@ -3,15 +3,15 @@ package db
 import (
 	"log"
 
-	"ip_loc/pkg/cdn"
-	"ip_loc/pkg/common"
-	"ip_loc/pkg/dbif"
-	"ip_loc/pkg/geoip"
-	"ip_loc/pkg/ip2location"
-	"ip_loc/pkg/ip2region"
-	"ip_loc/pkg/ipip"
-	"ip_loc/pkg/qqwry"
-	"ip_loc/pkg/zxipv6wry"
+	"github.com/justseemore/ip_loc/pkg/cdn"
+	"github.com/justseemore/ip_loc/pkg/common"
+	"github.com/justseemore/ip_loc/pkg/dbif"
+	"github.com/justseemore/ip_loc/pkg/geoip"
+	"github.com/justseemore/ip_loc/pkg/ip2location"
+	"github.com/justseemore/ip_loc/pkg/ip2region"
+	"github.com/justseemore/ip_loc/pkg/ipip"
+	"github.com/justseemore/ip_loc/pkg/qqwry"
+	"github.com/justseemore/ip_loc/pkg/zxipv6wry"
 )
 
 type DB struct {

@@ -1,9 +1,9 @@
-package ip_loc
+package github
 
 import (
-	"ip_loc/internal/db"
-	"ip_loc/pkg/dbif"
-	"ip_loc/pkg/entity"
+	"github.com/justseemore/ip_loc/internal/db"
+	"github.com/justseemore/ip_loc/pkg/dbif"
+	"github.com/justseemore/ip_loc/pkg/entity"
 )
 
 func Parse(line string) entity.Entities {

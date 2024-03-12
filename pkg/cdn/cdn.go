@@ -3,21 +3,15 @@ package cdn
 import (
 	"errors"
 	"fmt"
+	"gopkg.in/yaml.v3"
 	"io/ioutil"
 	"log"
 	"os"
 	"regexp"
 	"strings"
 
-	"gopkg.in/yaml.v2"
-	"ip_loc/pkg/re"
+	"github.com/justseemore/ip_loc/pkg/re"
 )
-
-var DownloadUrls = []string{
-	"https://cdn.jsdelivr.net/gh/4ft35t/cdn/src/cdn.yml",
-	"https://raw.githubusercontent.com/4ft35t/cdn/master/src/cdn.yml",
-	"https://raw.githubusercontent.com/SukkaLab/cdn/master/src/cdn.yml",
-}
 
 type CDN struct {
 	Map   map[string]CDNResult
