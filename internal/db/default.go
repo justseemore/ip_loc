@@ -1,7 +1,6 @@
 package db
 
 import (
-	"github.com/justseemore/ip_loc/pkg/qqwry"
 	"os"
 )
 
@@ -18,11 +17,10 @@ func GetDefaultDBList() List {
 			NameAlias: []string{
 				"chunzhen",
 			},
-			Format:       FormatQQWry,
-			File:         getCwd() + "/data/qqwry.dat",
-			Languages:    LanguagesZH,
-			Types:        TypesIPv4,
-			DownloadUrls: qqwry.DownloadUrls,
+			Format:    FormatQQWry,
+			File:      getCwd() + "/data/qqwry.dat",
+			Languages: LanguagesZH,
+			Types:     TypesIPv4,
 		},
 		&DB{
 			Name: "zxipv6wry",

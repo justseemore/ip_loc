@@ -70,25 +70,3 @@ func (db *ZXwry) Find(query string, _ ...string) (result fmt.Stringer, err error
 func (db *ZXwry) Name() string {
 	return "zxipv6wry"
 }
-
-func CheckFile(data []byte) bool {
-	if len(data) < 4 {
-		return false
-	}
-	if string(data[:4]) != "IPDB" {
-		return false
-	}
-
-	if len(data) < 24 {
-		return false
-	}
-	header := data[:24]
-	start := binary.LittleEndian.Uint64(header[16:24])
-	counts := binary.LittleEndian.Uint64(header[8:16])
-	end := start + counts*11
-	if start >= end || uint64(len(data)) < end {
-		return false
-	}
-
-	return true
-}

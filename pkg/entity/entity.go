@@ -58,9 +58,8 @@ func (es Entities) Swap(i, j int) {
 func (es Entities) String() string {
 	var result strings.Builder
 	for _, entity := range es {
-		result.WriteString(entity.Text)
 		if entity.Type != TypePlain && len(entity.InfoText) > 0 {
-			result.WriteString("[" + entity.InfoText + "] ")
+			result.WriteString(entity.InfoText)
 		}
 	}
 	return result.String()

@@ -11,13 +11,6 @@ import (
 	"github.com/justseemore/ip_loc/pkg/wry"
 )
 
-var DownloadUrls = []string{
-	"https://gh-release.zu1k.com/HMBSbige/qqwry/qqwry.dat", // redirect to HMBSbige/qqwry
-	// Other repo:
-	// https://github.com/HMBSbige/qqwry
-	// https://github.com/metowolf/qqwry.dat
-}
-
 type QQwry struct {
 	wry.IPDB[uint32]
 }

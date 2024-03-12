@@ -34,15 +34,11 @@ func GetDB(typ dbif.QueryType) (db dbif.DB) {
 }
 
 func Find(typ dbif.QueryType, query string) *Result {
-	if result, found := queryCache.Load(query); found {
-		return result.(*Result)
-	}
 	db := GetDB(typ)
 	result, err := db.Find(query)
 	if err != nil {
 		return nil
 	}
 	res := &Result{db.Name(), result}
-	queryCache.Store(query, res)
 	return res
 }
