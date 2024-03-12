@@ -1,4 +1,4 @@
-package github
+package main
 
 import (
 	"github.com/justseemore/ip_loc/internal/db"
