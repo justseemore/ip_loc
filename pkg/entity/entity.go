@@ -61,8 +61,6 @@ func (es Entities) String() string {
 		if entity.Type != TypePlain && len(entity.InfoText) > 0 {
 			info := strings.Replace(entity.InfoText, "中国", "", 1)
 			info = strings.TrimSpace(strings.ReplaceAll(info, "\t", " "))
-			//re := regexp.MustCompile(`\s+`)
-			//info = re.ReplaceAllString(info, "\t", " ")
 			result.WriteString(info)
 		}
 	}
