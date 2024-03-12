@@ -1,7 +1,6 @@
 package db
 
 import (
-	"github.com/justseemore/ip_loc/pkg/cdn"
 	"github.com/justseemore/ip_loc/pkg/qqwry"
 	"os"
 )
@@ -37,12 +36,12 @@ func GetDefaultDBList() List {
 			Types:     TypesIPv6,
 		},
 		&DB{
-			Name:         "cdn",
-			Format:       FormatCDNYml,
-			File:         getCwd() + "/data/cdn.yml",
-			Languages:    LanguagesZH,
-			Types:        TypesCDN,
-			DownloadUrls: cdn.DownloadUrls,
+			Name:      "cdn",
+			Format:    FormatCDNYml,
+			File:      getCwd() + "/data/cdn.yml",
+			Languages: LanguagesZH,
+			Types:     TypesCDN,
+			//DownloadUrls: cdn.DownloadUrls,
 		},
 	}
 }
